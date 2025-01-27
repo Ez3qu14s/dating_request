@@ -1,0 +1,39 @@
+.heart {
+  width: 14px;
+  height: 14px;
+  background: #4c38c1;
+  position: relative;
+  opacity: 0;
+  
+}
+
+.heart::before, .heart::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #4c38c1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  left: -7px;
+}
+
+.heart::after {
+  top: -7px;
+}
+
+.heart:first-child {
+  margin-left: 32px;
+  transform: rotate(55deg);
+}
+
+.heart:nth-child(2) {
+  transform: rotate(20deg);
+}
+
+.heart:last-child {
+  margin-left: 32px;
+  transform: rotate(55deg);
+}
